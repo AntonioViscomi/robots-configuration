@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE robot PUBLIC "-//YARP//DTD yarprobotinterface 3.0//EN" "http://www.yarp.it/DTD/yarprobotinterfaceV3.0.dtd">
 
-<robot name="three-encoder-setup" build="1" portprefix="threeEncoders" xmlns:xi="http://www.w3.org/2001/XInclude">
+<robot name="ankle-setup" build="1" portprefix="ankleSetup" xmlns:xi="http://www.w3.org/2001/XInclude">
 
   <devices>
     <params>
@@ -9,16 +9,16 @@
     </params>
 
     <!-- motor controllers wrappers -->
-    <xi:include href="wrappers/motorControl/three-encoders-setup-mc_wrapper.xml" />
-    <xi:include href="wrappers/motorControl/three-encoders-setup-mc_remapper.xml" />
+    <xi:include href="wrappers/motorControl/ankle-setup-mc_wrapper.xml" />
+    <xi:include href="wrappers/motorControl/ankle-setup-mc_remapper.xml" />
     <!-- nws wrapper -->
-    <xi:include href="wrappers/motorControl/three-encoders-setup-rawval-nws_wrapper.xml" />
+    <xi:include href="wrappers/motorControl/ankle-setup-rawval-nws_wrapper.xml" />
 
     <!-- TORSO -->
-    <xi:include href="hardware/motorControl/three-encoders-setup-mc.xml" />
+    <xi:include href="hardware/motorControl/ankle-setup-mc.xml" />
 
     <!--  CALIBRATORS -->
-    <xi:include href="calibrators/three-encoders-setup-calib.xml" />
+    <xi:include href="calibrators/ankle-setup-calib.xml" />
 
     <!-- ROBOMETRY -->
     <xi:include href="telemetry/telemetry.xml" />

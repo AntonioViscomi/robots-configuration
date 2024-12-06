@@ -3,7 +3,7 @@
 
 
     <device xmlns:xi="http://www.w3.org/2001/XInclude" name="telemetryDeviceDumper" type="telemetryDeviceDumper">
-        <param name="axesNames">(three_encoders_joint)</param> <!--shoulder_pitch, shoulder_roll, shoulder_yaw, elbow-->
+        <param name="axesNames">(ankle_joint)</param> <!--shoulder_pitch, shoulder_roll, shoulder_yaw, elbow-->
         <param name="logIEncoders">true</param>
         <param name="logITorqueControl">false</param>
         <param name="logIMotorEncoders">true</param>
@@ -13,8 +13,8 @@
         <param name="logIAmplifierControl">true</param>
         <param name="logIRawValuesPublisher">true</param>
         <param name="saveBufferManagerConfiguration">true</param>
-        <param name="experimentName">three_encoders_joint_amo_sequence_calib12</param>
-        <param name="path">./three_encoders_joint_telemetry_data/</param>
+        <param name="experimentName">ankleSetup_test</param>
+        <param name="path">./ankleSetup_telemetry_data/</param>
         <param name="n_samples">800000</param>
         <param name="save_periodically">false</param>
         <param name="save_period">1000.0</param>
@@ -28,7 +28,7 @@
             <paramlist name="networks">
                 <!-- motorcontrol and virtual torque sensors -->
                 <!-- <elem name="upper_arm_joints1">upper_arm-eb1-j0_1-mc</elem> -->
-                <elem name="upper_arm_joints1">three-encoders-setup-mc</elem>
+                <elem name="upper_arm_joints1">ankle-setup-mc</elem>
             </paramlist>
         </action>
 
