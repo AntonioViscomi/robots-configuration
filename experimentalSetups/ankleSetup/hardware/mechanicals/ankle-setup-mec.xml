@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE params PUBLIC "-//YARP//DTD yarprobotinterface 3.0//EN" "http://www.yarp.it/DTD/yarprobotinterfaceV3.0.dtd">
 
-<params xmlns:xi="http://www.w3.org/2001/XInclude" robot="three-encoders-setup" build="1">
+<params xmlns:xi="http://www.w3.org/2001/XInclude" robot="ankle-setup" build="1">
     <group name="GENERAL">
         <param name="MotioncontrolVersion"> 6 </param>
         <param name="Joints"> 1 </param> 
         <param name="AxisMap">              0                         </param>   
-        <param name="AxisName">             "three_encoders_joint"    </param>
+        <param name="AxisName">             "ankle_joint"    </param>
         <param name="AxisType">             "revolute"                </param>
         <param name="Encoder">              182.044                   </param>
         <param name="fullscalePWM">         32000                     </param>

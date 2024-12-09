@@ -2,12 +2,12 @@
 <!DOCTYPE devices PUBLIC "-//YARP//DTD yarprobotinterface 3.0//EN" "http://www.yarp.it/DTD/yarprobotinterfaceV3.0.dtd">
 
 
-    <device xmlns:xi="http://www.w3.org/2001/XInclude" name="three-encoders-setup-calibrator" type="parametricCalibratorEth">
+    <device xmlns:xi="http://www.w3.org/2001/XInclude" name="ankle-setup-calibrator" type="parametricCalibratorEth">
                 <xi:include href="../general.xml" />
                 
         <group name="GENERAL">
             <param name="joints"> 1 </param> <!-- the number of joints of the robot part -->
-            <param name="deviceName"> threeEncodersSetupCalib </param>
+            <param name="deviceName"> ankleSetupCalib </param>
         </group>
 
 <group name="HOME">
@@ -20,8 +20,6 @@
 <group name="CALIBRATION">                                            
 <!--                                                small                          -->
 <param name="calibrationType">                      12                       </param>
-                                                                                      <!--
-<param name="calibration1">                         58233                    </param> --> 
 <param name="calibration1">                         20934                    </param> <!-- 20934 amo (12) -4200 (10)  63820 aksim2-->
 <param name="calibration2">                         0                        </param> 
 <param name="calibration3">                         0                        </param> 
@@ -33,7 +31,7 @@
 <param name="calibrationDelta">                     0                        </param>
                                                                       
 <param name="startupPosition">                      0                        </param>
-<param name="startupVelocity">                      30                       </param>
+<param name="startupVelocity">                      20                       </param>
 <param name="startupMaxPwm">                        4000                     </param>
 <param name="startupPosThreshold">                  2                        </param>
 </group>
@@ -42,11 +40,11 @@
         <param name="CALIB_ORDER"> (0)  </param>
 
         <action phase="startup" level="10" type="calibrate">
-            <param name="target">three-encoders-setup-mc_remapper</param>
+            <param name="target">ankle-setup-mc_remapper</param>
         </action>
 
         <action phase="interrupt1" level="1" type="park">
-            <param name="target">three-encoders-setup-mc_remapper</param>
+            <param name="target">ankle-setup-mc_remapper</param>
         </action>
 
         <action phase="interrupt3" level="1" type="abort" />
