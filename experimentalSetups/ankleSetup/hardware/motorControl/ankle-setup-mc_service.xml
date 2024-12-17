@@ -37,22 +37,22 @@
                 </group>                                           
                     
                 <!-- Aksim2 Encoder-->
-                <!-- <group name="ENCODER1">                            
-                    <param name="type">             aksim2              </param>  
+                 <group name="ENCODER1">                            
+                    <param name="type">             none              </param>  
                     <param name="port">             CONN:P8             </param>
                     <param name="position">         atjoint             </param>
                     <param name="resolution">       -524288             </param> 
                     <param name="tolerance">        0.703               </param>  
-                </group>      -->
+                </group>
 
                 <!-- MECAPION_APM-SA01ACN-8 Encoder-->
-                <!-- <group name="ENCODER1">                            
-                    <param name="type">             SA01ACN              </param>  
-                    <param name="port">             CONN:P8             </param>
-                    <param name="position">         atjoint             </param>
-                    <param name="resolution">       -2048             </param> 
-                    <param name="tolerance">        0.703               </param>  
-                </group>      -->
+                <group name="ENCODER2">                            
+                    <param name="type">             mrie              </param>  <!-- SA01ACN ???-->
+                    <param name="port">             CAN1:1:0          </param>
+                    <param name="position">         atmotor           </param>
+                    <param name="resolution">       8192             </param> 
+                    <param name="tolerance">        3.6               </param>  
+                </group> 
                 
                 <!-- AMO Encoder 16384 if using calib12 or 10 (x64 is defined in mech file at E2J)-->
 	            <!-- group name="ENCODER1">                            

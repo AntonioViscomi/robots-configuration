@@ -11,17 +11,18 @@
     <!-- motor controllers wrappers -->
     <xi:include href="wrappers/motorControl/ankle-setup-mc_wrapper.xml" />
     <xi:include href="wrappers/motorControl/ankle-setup-mc_remapper.xml" />
-    <!-- nws wrapper -->
-    <xi:include href="wrappers/motorControl/ankle-setup-rawval-nws_wrapper.xml" />
+ 
 
-    <!-- TORSO -->
+    <!-- ankle -->
     <xi:include href="hardware/motorControl/ankle-setup-mc.xml" />
 
-    <!--  CALIBRATORS -->
-    <xi:include href="calibrators/ankle-setup-calib.xml" />
+    <!--  CALIBRATORS  -->
+    <xi:include href="calibrators/ankle-setup-calib.xml" /> 
 
     <!-- ROBOMETRY -->
     <xi:include href="telemetry/telemetry.xml" />
+    <!-- nws wrapper -->
+    <xi:include href="wrappers/motorControl/ankle-setup-rawval-nws_wrapper.xml" />
 
   </devices>
 </robot>
