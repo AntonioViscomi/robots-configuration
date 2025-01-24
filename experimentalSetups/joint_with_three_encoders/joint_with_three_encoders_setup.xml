@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE robot PUBLIC "-//YARP//DTD yarprobotinterface 3.0//EN" "http://www.yarp.it/DTD/yarprobotinterfaceV3.0.dtd">
+
+<robot name="joint_with_three_encoders_setup_" build="1" portprefix="/joint_with_three_encoders"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <devices>
+    <params>
+      <xi:include href="hardware/electronics/pc104.xml" />
+    </params>
+
+    <!-- motor controllers wrappers -->
+    <xi:include href="wrappers/motorControl/joint_with_three_encoders_setup_mc_wrapper.xml" />
+    <xi:include href="wrappers/motorControl/joint_with_three_encoders_setup_mc_remapper.xml" />
+    <!-- nws wrapper 
+    <xi:include href="wrappers/motorControl/joint_with_three_encoders_setup_rawval_nws_wrapper.xml" /> -->
+
+    <!-- TORSO -->
+    <xi:include href="hardware/motorControl/joint_with_three_encoders_setup_mc.xml" />
+
+    <!--  CALIBRATORS -->
+    <xi:include href="calibrators/joint_with_three_encoders_setup_calib.xml" />
+
+    <!-- ROBOMETRY 
+    <xi:include href="telemetry/telemetry.xml" /> -->
+
+  </devices>
+</robot>

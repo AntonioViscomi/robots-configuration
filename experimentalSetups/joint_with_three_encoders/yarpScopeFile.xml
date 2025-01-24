@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<portscope rows="2" columns="2" carrier="fast_tcp">
+    <!-- First Joint -->
+    <plot gridx="0"
+          gridy="0"
+          hspan="1"
+          vspan="1"
+          minval="-10000"
+          maxval="10000"
+          title="Joint 0 Position"
+          bgcolor="LightBlue">
+        <graph remote="/joint_with_three_encoders/joint_with_three_encoders_setup/stateExt:o/split0:o"
+               index="0"
+               color="Red"
+               title="Joint 0 Position"
+               type="lines"
+               size="3" />
+    </plot>
+    <plot gridx="1"
+          gridy="0"
+          hspan="1"
+          vspan="1"
+          minval="-500000"
+          maxval="500000"
+          title="Motor Position"
+          bgcolor="LightGreen">
+        <graph remote="/joint_with_three_encoders/joint_with_three_encoders_setup/stateExt:o/split6:o"
+               index="0"
+               color="Magenta"
+               title="Motor Position"
+               type="lines"
+               size="3" />
+    </plot>
+
+    <!-- Second Joint -->
+    <plot gridx="0"
+          gridy="1"
+          hspan="1"
+          vspan="1"
+          minval="-10000"
+          maxval="10000"
+          title="Joint 1 Position"
+          bgcolor="Khaki">
+        <graph remote="/joint_with_three_encoders/joint_with_three_encoders_setup/stateExt:o/split0:o"
+               index="1"
+               color="Blue"
+               title="Joint 1 Position"
+               type="lines"
+               size="3" />
+    </plot>
+    <plot gridx="1"
+          gridy="1"
+          hspan="1"
+          vspan="1"
+          minval="-20"
+          maxval="20"
+          title="Motor Current"
+          bgcolor="Coral">
+        <graph remote="/joint_with_three_encoders/joint_with_three_encoders_setup/stateExt:o/split16:o"
+               index="0"
+               color="Green"
+               title="Motor Current"
+               type="lines"
+               size="3" />
+    </plot>
+</portscope>
