@@ -22,7 +22,7 @@
         <!-- <param name="data_threshold">50000</param> -->
         <param name="auto_save">true</param>
         <param name="yarp_robot_name">ergoCubSN002S</param>
-        <param name="rawValuesPublisherRemoteName">ankleSetupTelemetry/raw_data</param>
+        <param name="rawValuesPublisherRemoteName">/fakedevicetest/raw_data</param>
 
         <action phase="startup" level="15" type="attach">
             <paramlist name="networks">
