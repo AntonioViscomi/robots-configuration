@@ -14,4 +14,9 @@
   <group name="MAINTENANCE">
     <param name="skipRecalibration"> true </param>
   </group>
+
+  <group name="DEBUG">
+    <param name="embBoardsConnected"> 0 </param>
+  </group>
+  
 </params>
