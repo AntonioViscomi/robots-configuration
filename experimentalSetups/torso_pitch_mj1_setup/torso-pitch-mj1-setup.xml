@@ -20,8 +20,8 @@
     <!--  CALIBRATORS -->
     <xi:include href="calibrators/torso-pitch-mj1-setup-calib.xml" />
 
-    <!-- ROBOMETRY -->
-    <xi:include href="telemetry/telemetry.xml" />
+    <!-- ROBOMETRY 
+    <xi:include href="telemetry/telemetry.xml" />-->
 
   </devices>
 </robot>

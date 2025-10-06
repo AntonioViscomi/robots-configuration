@@ -38,7 +38,8 @@
         <param name="mixedControl">             POS_PID_DEFAULT       POS_PID_DEFAULT     </param>
         <param name="torqueControl">            TRQ_PID_DEFAULT       TRQ_PID_DEFAULT     </param>
         <param name="currentPid">               2FOC_CUR_CONTROL      2FOC_CUR_CONTROL    </param>
-        <param name="speedPid">                 2FOC_VEL_CONTROL      2FOC_VEL_CONTROL    </param>
+        <param name="positionDirect">           2FOC_VEL_CONTROL      2FOC_VEL_CONTROL    </param>
+        <param name="velocityDirect">           2FOC_VEL_CONTROL      2FOC_VEL_CONTROL    </param>
     </group>
 
 
