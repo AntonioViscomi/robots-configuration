@@ -38,12 +38,42 @@
         <param name="mixedControl">             POS_PID_DEFAULT       POS_PID_DEFAULT     </param>
         <param name="torqueControl">            TRQ_PID_DEFAULT       TRQ_PID_DEFAULT     </param>
         <param name="currentPid">               2FOC_CUR_CONTROL      2FOC_CUR_CONTROL    </param>
-        <param name="positionDirect">           2FOC_VEL_CONTROL      2FOC_VEL_CONTROL    </param>
-        <param name="velocityDirect">           2FOC_VEL_CONTROL      2FOC_VEL_CONTROL    </param>
+        <param name="positionDirect">           test_POS_PID_DIRECT      test_POS_PID_DIRECT    </param>
+        <param name="velocityDirect">           test_VEL_PID_DIRECT      test_VEL_PID_DIRECT    </param>
     </group>
 
 
     <!-- default position PID: begin -->
+    <group name="test_POS_PID_DIRECT">
+        <param name="controlLaw">             direct                        </param>
+        <param name="outputType">             current                            </param>
+        <param name="fbkControlUnits">        metric_units                   </param>
+        <param name="outputControlUnits">     machine_units                  </param>
+        <param name="kp">                  500                 500           </param>
+        <param name="kd">                  0                   0             </param>
+        <param name="ki">                  100                 100           </param>
+        <param name="maxOutput">           32000               32000         </param>
+        <param name="maxInt">              3000                3000          </param>
+        <param name="stictionUp">          0                   0             </param>
+        <param name="stictionDown">        0                   0             </param>
+        <param name="kff">                 0                   0             </param>
+    </group>
+
+    <!-- default position PID: begin -->
+    <group name="test_VEL_PID_DIRECT">
+        <param name="controlLaw">             direct                        </param>
+        <param name="outputType">             current                            </param>
+        <param name="fbkControlUnits">        metric_units                   </param>
+        <param name="outputControlUnits">     machine_units                  </param>
+        <param name="kp">                  500                 500           </param>
+        <param name="kd">                  0                   0             </param>
+        <param name="ki">                  100                 100           </param>
+        <param name="maxOutput">           32000               32000         </param>
+        <param name="maxInt">              3000                3000          </param>
+        <param name="stictionUp">          0                   0             </param>
+        <param name="stictionDown">        0                   0             </param>
+        <param name="kff">                 0                   0             </param>
+    </group>
 
     <group name="POS_PID_DEFAULT">
         <param name="controlLaw">             minjerk                        </param>
