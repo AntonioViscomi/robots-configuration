@@ -11,8 +11,6 @@
     <!-- motor controllers wrappers -->
     <xi:include href="wrappers/motorControl/torso-pitch-mj1-setup-mc_wrapper.xml" />
     <xi:include href="wrappers/motorControl/torso-pitch-mj1-setup-mc_remapper.xml" />
-    <!-- nws wrapper -->
-    <xi:include href="wrappers/motorControl/torso-pitch-mj1-setup-rawval-nws_wrapper.xml" />
 
     <!-- TORSO -->
     <xi:include href="hardware/motorControl/torso-pitch-mj1-setup-mc.xml" />
@@ -22,6 +20,5 @@
 
     <!-- ROBOMETRY -->
     <xi:include href="telemetry/telemetry.xml" />
-
   </devices>
 </robot>
